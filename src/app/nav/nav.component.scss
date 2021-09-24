@@ -1,11 +1,5 @@
 @import './../../sass/styles';
 
-.active{
-    background-color: $color;
-    border-style: solid;
-    box-shadow: black 5px 5px;
-}
-
 nav{
     & *{
         z-index: 10;
@@ -16,29 +10,43 @@ nav{
     & li{
         text-decoration: none;
         list-style-type: none;
-
         & a{
-            padding: 2px;
-
+            padding: 0 20px;
+            & img{
+              height: 95px;
+            }
         }
     }
 }
 
-nav .nav-main{
+nav #nav-main{
     display: inline-block;
-    width: 96%;
+    width: 60%;
     position: fixed;
     top: 2%;
     left: 2%;
+    height: $nav-height;
 
 
     & ul{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     & a{
         transition: .2s ease-out;
+        line-height: $nav-height;
     }
+}
+#nav-main-container{
+  width: 100%;
+  height: $nav-height;
+  background-color: $white;
+  z-index:10;
+  position: fixed;
+  top:0;
+  transition: .4s ease;
+
+  box-shadow: $color 1px 3px 70px;
 }
 
 nav .nav-sec{
@@ -46,6 +54,9 @@ nav .nav-sec{
     bottom: 2%;
     right: 2%;
     text-align: right;
+    & ul li a img{
+      height: 2.5rem;
+    }
 }
 
 nav .nav-tri{

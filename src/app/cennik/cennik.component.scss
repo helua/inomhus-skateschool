@@ -2,12 +2,16 @@
 
 .holder{
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  margin-top: -$nav-height;
+  height: calc(100vh-$nav-height);
 
 }
+@media only screen and (min-width: 600px){
+  table{
+  margin: 40px;
+
+}}
 th{
   background-color: $color;
   font-size: 1.5rem;
