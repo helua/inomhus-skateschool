@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 import { InstaService } from '../insta.service';
@@ -8,7 +8,7 @@ import { InstaService } from '../insta.service';
   templateUrl: './galeria.component.html',
   styleUrls: ['./galeria.component.scss']
 })
-export class GaleriaComponent implements OnInit {
+export class GaleriaComponent implements OnInit, AfterViewChecked {
 
   title = 'Galeria | INOMHUS Skate School';
   keywords: MetaDefinition = {name: 'keywords', content: 'jakieś keywords'};
@@ -46,4 +46,27 @@ export class GaleriaComponent implements OnInit {
       });
       feed.run();
   }
+
+  ngAfterViewChecked(){
+    const a = Array.from(document.getElementById('instafeed')?.getElementsByTagName('a') as HTMLCollectionOf<HTMLElement>);
+    const img = Array.from(document.getElementById('instafeed')?.getElementsByTagName('img') as HTMLCollectionOf<HTMLElement>);
+    console.log(a);
+    let i;
+    for (i = 0; i < a.length; i++) {
+    a[i].style.width = "300px"
+    a[i].style.height = "300px"
+    a[i].style.display = "block"
+    a[i].style.margin = "1.5%"
+
+
+    }
+    for (i = 0; i < a.length; i++) {
+    img[i].style.width = "300px"
+    // img[i].style.height = "300px"
+    img[i].style.display = "block"
+
+
+    }
+  }
+
 }
