@@ -27,7 +27,7 @@ a{
     color: $color;
     transition: .1s;
     font-weight: 900;
-
+   
     @media screen and (min-width: 600px){
         &:hover:not(#logo, #inomhus) {
           background-position: center;

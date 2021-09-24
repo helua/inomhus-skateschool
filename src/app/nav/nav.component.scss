@@ -11,9 +11,9 @@ nav{
         text-decoration: none;
         list-style-type: none;
         & a{
-            padding: 0 20px;
+          padding: 0 10px 0 22px;
             & img{
-              height: 95px;
+              height: 100px;
             }
         }
     }
@@ -45,8 +45,7 @@ nav #nav-main{
   position: fixed;
   top:0;
   transition: .4s ease;
-
-  box-shadow: $color 1px 3px 70px;
+  box-shadow: $color 1px 3px 17px;
 }
 
 nav .nav-sec{
