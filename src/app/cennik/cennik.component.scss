@@ -1,1 +1,26 @@
 @import './../../sass/styles';
+
+.holder{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: -$nav-height;
+
+}
+th{
+  background-color: $color;
+  font-size: 1.5rem;
+  color: $white;
+  width: 10%;
+  background-image: url(../../assets/10pink.jpg);
+  background-size: 50%;
+  background-blend-mode: color;
+}
+td{
+width: 30%;
+text-align: center;
+}
+tr{
+  height: 100px;
+}

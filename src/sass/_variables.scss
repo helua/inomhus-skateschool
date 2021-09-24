@@ -5,12 +5,24 @@ $contrast: #210d91;
 $mild: #b0f1aa67;
 $mild2: #5ebb20;
 $neutral: #818181;
-$white: black;
+$white: rgb(250, 246, 246);
 
 $selection: pink;
 
 $gap: 0px;
+$nav-height: 4.2rem;
 
 $waznafuncja: buziaczek aniuli dac;
 $waznafuncja2: aniulka blaga o wpierdol;
+@font-face {
+  font-family: 'Tagger';
+  src: url('../assets/Tagger-Regular.woff') format('woff');
+  src: url('../assets/Tagger-Regular.ttf') format('ttf');
+  src: url('../assets/Tagger-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+$font-family: 'Lucida Sans Unicode', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font-family2: 'Tagger';
+
 
