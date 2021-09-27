@@ -90,21 +90,30 @@ h1, h2{
 
 button{
     background-color: $contrast;
-    color: $white;
+    color: $color;
     text-transform: uppercase;
     padding: 15px;
-    margin: 40px;
+    margin: 100px;
     cursor: pointer;
     transition: .1s;
     font-family: $font-family;
     font-size: 1.4rem;
-    transition: all .1s;
+    transition: all .3s;
     text-align: center;
     border-radius: .5rem;
     position: absolute;
     letter-spacing: .2rem;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+
     &:hover{
       transform: scale(1.05);
+      border-radius: 0%;
+    }
+    & img{
+      height: 3rem;
+      display: inline-block;
     }
 }
 //responsive menu
