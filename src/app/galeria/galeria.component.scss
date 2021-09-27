@@ -14,5 +14,8 @@
   margin: auto;
   justify-content: center;
   margin-top: 200px;
+  @include respond(phone){
+    margin-top: 0px;
+  }
 }
 

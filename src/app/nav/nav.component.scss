@@ -62,7 +62,12 @@ nav #nav-main{
       line-height: $nav-height;
       &:first-child{
         padding-left: 50px;
+        @include respond(tab-port){
+          padding-left: 20px;
+          
+        }
       }
+
 
     }
     & a{
@@ -71,14 +76,21 @@ nav #nav-main{
         transition: .2s ease-out;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         & img{
           height: 100px;
           margin-right: -15px;
+          @include respond(tab-port){
+            padding-left: 0px;
+            height: 100px;
+
+          }
 
         }
         & span{
           padding-left: 15px;
+          @include respond(tab-port){
+            padding-left: 0px;
+          }
 
         }
     }

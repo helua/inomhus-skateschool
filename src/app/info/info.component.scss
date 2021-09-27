@@ -3,7 +3,7 @@
 .holder{
   margin-top: 200px;
   width: 80%;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   & p{
     width: 70%;
     margin: 50px 0 100px 0;
@@ -16,17 +16,33 @@
     width: 70%;
     margin-left: 5rem;
     }
+
+  @include respond(phone){
+    margin-top: 0px;
+    width: 100%;
+    & p{
+      width: 90%;
+      margin: 10px 0 40px 0;
+    }
+    & img:nth-child(1){
+      margin-top: -4%;
+      width: 100%;
+    }
+    & img:nth-child(4){
+      width: 100%;
+      margin-left: 0rem;
+      }
+  }
 }
-.important
-{
-  width: 120%;
+.important{
+  width: 100%;
   display: flex;
   text-align: left;
   & .col:nth-child(1){
-    width: 40%;
+    width: 45%;
   }
   & .col:nth-child(2){
-    width: 51%;
+    width: 55%;
   }
   & .col{
     & h2{
@@ -50,6 +66,27 @@
       }
 
     }
-
+  }
+  @include respond(phone){
+    width: 100%;
+    display: block;
+    text-align: left;
+    & .col:nth-child(1){
+      width: 100%;
+    }
+    & .col:nth-child(2){
+      width: 100%;
+    }
+    & .col{
+      & h2{
+        padding: 0 1rem;
+      }
+      & img{
+        width: 100%;
+      }
+      & ol{
+        padding: 0 1rem;
+      }
+    }
   }
 }
