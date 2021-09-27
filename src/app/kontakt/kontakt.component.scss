@@ -4,11 +4,10 @@
   display: flex;
   // justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  margin-top: -$nav-height;
+  margin-top: 200px;
   & .logo{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 10px auto;
     & img{
       width: 100%;

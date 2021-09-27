@@ -5,14 +5,22 @@
   font-size: 1.5rem;
   letter-spacing: .15rem;
   margin-top: 3%;
+  & img{
+    height: 6rem;
+  }
 }
 .mat-list-item:hover{
-  background-color: $color;
+  background-color: $white;
 }
 
 fa-icon{
+  color: $contrast;
   font-size: 2rem;
   line-height: 3rem;
-  filter: drop-shadow( 2px 2px rgba($color, 0.2));
-  -webkit-filter: drop-shadow( 2px 2px rgba($color, 0.2));
+  // filter: drop-shadow( 2px 2px rgba($color, .9));
+  // -webkit-filter: drop-shadow( 2px 2px rgba($color, .9));
+}
+fa-icon:focus{
+    filter: drop-shadow( 2px 2px rgba($color, .9));
+  -webkit-filter: drop-shadow( 2px 2px rgba($color, .9));
 }

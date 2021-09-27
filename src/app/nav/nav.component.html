@@ -3,11 +3,31 @@
     <div id="nav-main-container">
       <div id="nav-main">
         <ul>
-          <li><a id="logo" routerLink="/info"><img src="../../assets/logo.png" alt=""></a></li>
-          <li><a routerLink="/info" routerLinkActive="active">Info</a></li>
-          <li><a routerLink="/cennik" routerLinkActive="active">Cennik</a></li>
-          <li><a routerLink="/kontakt" routerLinkActive="active">Kontakt</a></li>
-          <li><a routerLink="/galeria" routerLinkActive="active">Galeria</a></li>
+          <li><a id="logo" routerLink="/info"><img id="logo-img" src="../../assets/logo.png" alt=""></a></li>
+          <li routerLinkActive="active-li" >
+            <a routerLink="/info" routerLinkActive="active">
+              <img src="../../assets/znak zapytania.svg" alt="" style="margin-right: -30px;">
+              <span>&nbsp;&nbsp;Info</span>
+            </a>
+          </li>
+          <li routerLinkActive="active-li">
+            <a routerLink="/cennik" routerLinkActive="active">
+              <img src="../../assets/dokument.svg" alt="">
+              <span>Cennik</span>
+            </a>
+          </li>
+          <li routerLinkActive="active-li">
+            <a routerLink="/kontakt" routerLinkActive="active">
+              <img src="../../assets/ryjek.svg" alt="">
+              <span>Kontakt</span>
+            </a>
+          </li>
+          <li routerLinkActive="active-li" >
+            <a routerLink="/galeria" routerLinkActive="active">
+              <img src="../../assets/boom.svg" alt="">
+              <span>Galeria</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

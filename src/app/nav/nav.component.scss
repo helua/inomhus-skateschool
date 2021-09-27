@@ -1,58 +1,97 @@
 @import './../../sass/styles';
 
+#nav-main-container{
+  width: 100%;
+  height: $nav-height;
+  padding: 2% 0;
+  background-color: $white;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  transition: .4s ease;
+  box-shadow: $mild2 -100px -100px 1000px;
+}
+
 nav{
-    & *{
-        z-index: 10;
-    }
     & ul{
         padding: 0;
     }
     & li{
         text-decoration: none;
         list-style-type: none;
-        & a{
-          padding: 0 10px 0 22px;
-            & img{
-              height: 100px;
-            }
-        }
     }
 }
 
+nav li.active-li a span::after{
+  content: "";
+  background-image: url('../../assets/zaznaczenie.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: .7;
+  top: -20px;
+  bottom: 0;
+  left: 50%;
+  width: 130px;
+  position: absolute;
+  display: inline-block;
+  height: 150px;
+  z-index: -1;
+
+}
+
+
 nav #nav-main{
-    display: inline-block;
-    width: 60%;
-    position: fixed;
-    top: 2%;
-    left: 2%;
+    margin: 0 auto;
+    width: 90%;
+    position: inherit;
     height: $nav-height;
+
+    img#logo-img{
+      height: 100px;
+      vertical-align: top;
+    }
+
 
 
     & ul{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    & li{
+      line-height: $nav-height;
+      &:first-child{
+        padding-left: 50px;
+      }
+
     }
     & a{
+        width: 100px;
+        text-align: center;
         transition: .2s ease-out;
-        line-height: $nav-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        & img{
+          height: 100px;
+          margin-right: -15px;
+
+        }
+        & span{
+          padding-left: 15px;
+
+        }
     }
 }
-#nav-main-container{
-  width: 100%;
-  height: $nav-height;
-  background-color: $white;
-  z-index:10;
-  position: fixed;
-  top:0;
-  transition: .4s ease;
-  box-shadow: $color 1px 3px 17px;
-}
+
 
 nav .nav-sec{
     position: fixed;
     bottom: 2%;
     right: 2%;
     text-align: right;
+    z-index: 9;
+
     & ul li a img{
       height: 2.5rem;
     }

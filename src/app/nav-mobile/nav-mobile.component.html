@@ -4,7 +4,8 @@
       <!-- <mat-icon (click)="sidenav.toggle()">menu</mat-icon> -->
       <fa-icon [icon]="menuIcon" (click)="sidenav.toggle()"></fa-icon>
     </li>
-    <li><a href="https://vimeo.com/inohmus" target="_blank">
+    <li>
+      <a href="https://vimeo.com/inohmus" target="_blank">
       <!-- <i class="fa fa-vimeo" aria-hidden="true"></i> -->
       <fa-icon [icon]="vimeoIcon"></fa-icon>
     </a></li>
@@ -23,11 +24,11 @@
   <mat-sidenav-container>
       <mat-sidenav #sidenav>
         <mat-nav-list>
-          <a (click)="sidenav.toggle()" mat-list-item routerLink="/info" routerLinkActive="active">INFO</a>
-          <a (click)="sidenav.toggle()" mat-list-item routerLink="/cennik" routerLinkActive="active">CENNIK</a>
-          <a (click)="sidenav.toggle()" mat-list-item routerLink="/kontakt" routerLinkActive="active">KONTAKT</a>
-          <a (click)="sidenav.toggle()" mat-list-item routerLink="/galeria" routerLinkActive="active">GALERIA</a>
-          <a (click)="sidenav.toggle()" mat-list-item href="http://helio.webd.pl/inomhus" target="_blank">GRAFIKA</a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/info" routerLinkActive="active"><img src="../../assets/znak zapytania.svg" alt="">INFO</a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/cennik" routerLinkActive="active"><img src="../../assets/dokument.svg" alt="">CENNIK</a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/kontakt" routerLinkActive="active"><img src="../../assets/ryjek.svg" alt="">KONTAKT</a>
+          <a (click)="sidenav.toggle()" mat-list-item routerLink="/galeria" routerLinkActive="active"><img src="../../assets/boom.svg" alt="">GALERIA</a>
+          <a (click)="sidenav.toggle()" mat-list-item href="http://helio.webd.pl/inomhus" target="_blank"><img src="../../assets/inomhus.png" alt="INOMHUS" style="height: 3.5rem; margin: 1rem 0 0 1rem;"></a>
 
         </mat-nav-list>
       </mat-sidenav>

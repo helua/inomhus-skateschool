@@ -18,16 +18,22 @@ export class NavComponent implements OnInit {
       const windowScroll = window.pageYOffset;
       const menu = document.getElementById("nav-main") as HTMLElement;
       const cont = document.getElementById("nav-main-container") as HTMLElement;
+      const img = menu.getElementsByTagName('img') as HTMLCollectionOf<HTMLElement>;
       const logo = document.getElementById('logo') as HTMLElement;
 
 
       if(windowScroll >= 160){
-        menu.style.top = "0";
-        cont.style.height = "100px";
+        cont.style.padding = "0% 0";
+        console.log(img);
+        for(let i=0; i >= img.length; i++){
+          img[i].style.transform = "scale(.5)";
+        }
         logo.style.transform = "scale(.8)";
       } else {
-        menu.style.top = "2%";
-        cont.style.height = "calc(4% + 100px)";
+        cont.style.padding = "2% 0";
+        for(let i=0; i >= img.length; i++){
+          img[i].style.transform = "scale(1)";
+        }
         logo.style.transform = "scale(1)";
 
 
