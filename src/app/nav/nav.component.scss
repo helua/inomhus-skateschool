@@ -48,6 +48,12 @@ nav li.active-li a span::after{
   }
 
 }
+nav a.active{
+  color: $contrast;
+  opacity: .9;
+  transform: translateY(-1.5px);
+  text-shadow: 1px 3px 2px $mild;
+}
 
 nav #nav-main{
     margin: 0 auto;

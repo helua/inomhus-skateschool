@@ -24,15 +24,14 @@ body{
 
 a{
     text-decoration: none;
-    color: $contrast;
+    color: $color;
     transition: .1s;
     font-weight: 900;
-    @include respond(tab-port){
-      &:hover:not(#logo, #inomhus) {
-        opacity: .9;
-        transform: translateY(-1.5px);
-        text-shadow: 1px 3px 2px $mild;
-      }
+    &:hover:not(#logo, #inomhus) {
+      color: $contrast;
+      opacity: .9;
+      transform: translateY(-1.5px);
+      text-shadow: 1px 3px 2px $mild;
     }
 }
 a#inomhus{

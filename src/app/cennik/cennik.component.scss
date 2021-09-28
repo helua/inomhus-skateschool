@@ -7,7 +7,7 @@
     margin-top: 200px;
   }
   @include respond(phone){
-    height: 100vh;
+    margin-top: 100px;
   }
 }
 @media only screen and (min-width: 600px){
