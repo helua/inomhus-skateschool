@@ -3,6 +3,9 @@
 .holder{
   display: flex;
   flex-direction: column;
+  @include respond(tab-port){
+    margin-top: 200px;
+  }
   @include respond(phone){
     height: 100vh;
   }

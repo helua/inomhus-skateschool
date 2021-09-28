@@ -27,6 +27,11 @@
   & p{
     width: 700px;
     text-align: center;
+    @include respond(tab-port){
+      width: 60%;
+      margin: auto;
+    }
+
     @include respond(phone){
       width: 300px;
       margin: 0 auto;

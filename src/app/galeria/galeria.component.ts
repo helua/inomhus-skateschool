@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 import { InstaService } from '../insta.service';
+import { ScreenService } from '../screen.service';
 
 @Component({
   selector: 'app-galeria',
@@ -15,7 +16,7 @@ export class GaleriaComponent implements OnInit, AfterViewChecked {
 
   instagramToken: any;
   instagramString: string ='IGQVJYWUpaRHJvV0VpWEJRRFBGNVlOS0Eycm44SXNuXzRLdGVSN1BqcnQwR3cxVktfS29Ra3RpWWlSWmxLMHJpaFdvZAEZApN3hsV1NnZA1pVeWx3RjU3ZAUhvam52ZAFhCMEJUVDExYjJ3';
-  constructor(private titleService: Title, private metaService: Meta, private insta: InstaService){}
+  constructor(private titleService: Title, private metaService: Meta, private insta: InstaService, private screen: ScreenService){}
 
   ngOnInit() {
     this.titleService.setTitle(this.title);
@@ -23,6 +24,8 @@ export class GaleriaComponent implements OnInit, AfterViewChecked {
     this.metaService.updateTag(this.description);
     this.getToken();
     this.getFeed();
+    this.screen.getScreenSize();
+
 
   }
 
@@ -46,17 +49,31 @@ export class GaleriaComponent implements OnInit, AfterViewChecked {
   ngAfterViewChecked(){
     const a = Array.from(document.getElementById('instafeed')?.getElementsByTagName('a') as HTMLCollectionOf<HTMLElement>);
     const img = Array.from(document.getElementById('instafeed')?.getElementsByTagName('img') as HTMLCollectionOf<HTMLElement>);
-    let i;
-    for (i = 0; i < a.length; i++) {
-    a[i].style.width = "300px"
-    a[i].style.height = "300px"
-    a[i].style.display = "block"
-    a[i].style.margin = "1.5%"
-    }
-    for (i = 0; i < a.length; i++) {
-    img[i].style.width = "300px"
-    // img[i].style.height = "300px"
-    img[i].style.display = "block"
+    if(this.screen.isBigScreen){
+      let i;
+      for (i = 0; i < a.length; i++) {
+      a[i].style.width = "300px"
+      a[i].style.height = "300px"
+      a[i].style.display = "block"
+      a[i].style.margin = "1.5%"
+      }
+      for (i = 0; i < a.length; i++) {
+      img[i].style.width = "300px"
+      img[i].style.display = "block"
+      }
+    }else{
+      let i;
+      for (i = 0; i < a.length; i++) {
+      a[i].style.width = "230px"
+      a[i].style.height = "230px"
+      a[i].style.display = "block"
+      a[i].style.margin = "1%"
+      }
+      for (i = 0; i < a.length; i++) {
+      img[i].style.width = "230px"
+      img[i].style.display = "block"
+      }
+
     }
 
   }

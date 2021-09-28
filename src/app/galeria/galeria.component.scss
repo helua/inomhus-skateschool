@@ -3,17 +3,13 @@
 
 
 #instafeed {
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(3, 1fr);
-  // grid-column-gap: 0.5rem;
-  // grid-row-gap: 0.5rem;
   display: flex;
   flex-wrap: wrap;
   max-width: 64rem;
   margin: auto;
   justify-content: center;
   margin-top: 200px;
+
   @include respond(phone){
     margin-top: 0px;
   }

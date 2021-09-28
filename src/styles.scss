@@ -27,7 +27,7 @@ a{
     color: $contrast;
     transition: .1s;
     font-weight: 900;
-    @media screen and (min-width: 600px){
+    @include respond(tab-port){
       &:hover:not(#logo, #inomhus) {
         opacity: .9;
         transform: translateY(-1.5px);
