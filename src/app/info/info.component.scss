@@ -1,33 +1,35 @@
 @import './../../sass/styles';
 h1{
   position: absolute;
-  display: inline-block;
-  z-index: 10;
   mix-blend-mode: luminosity;
   background-color: $contrast;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  top: 159px;
-  left: 0%;
+  margin: 1% 0;
   line-height: 5rem;
+  right:20%;
   text-align: right;
   font-size: 2.5rem;
-  @include respond(tab-port){
-    position: relative;
-    top:0;
-    background-color: white;
-    text-align: left;
+  z-index: 10;
+  @include respond(tab-land){
     font-size: 1.8rem;
     line-height: 2.7rem;
-    margin: 0;
-    padding: 60px 10px 10px 10px;
+    letter-spacing: .13rem;
+    padding: 0;
+    margin: 2% 0;
+  }
+  @include respond(tab-port){
+padding: 10px;
+text-align: center;    right:0%;
+    line-height: 3rem;
+    background-color: $white;
+
+
 
   }
+
   @include respond(phone){
     margin: 0;
-    padding: 40px 10px 0 10px;
-
+    position: relative;
   }
 
 }
@@ -44,7 +46,7 @@ h1{
     margin: 50px 0 100px 0;
   }
   & img:nth-child(1){
-    margin-top: -4%;
+    margin-top: -3%;
     width: 100%;
     z-index: 7;
   }
