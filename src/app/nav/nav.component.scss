@@ -157,19 +157,16 @@ nav .nav-sec{
     }
 }
 
-nav .nav-tri{
-    position: fixed;
-    bottom: 2%;
-    left: 2%;
-
-}
 
 nav .nav-qua{
-  font-size: 8.5px;
+  font-size: 7.5px;
   line-height: 11px;
   position: fixed;
   right: 2%;
   top: 50%;
   transform: translate(50%, -50%) rotate(270deg);
+  z-index: 9;
+  text-transform: uppercase;
+
 }
 
