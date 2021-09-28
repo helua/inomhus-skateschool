@@ -30,7 +30,7 @@ import { MatListModule } from '@angular/material/list';
     CennikComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FontAwesomeModule,
     MatMenuModule,
