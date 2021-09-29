@@ -87,7 +87,7 @@ nav #nav-main{
         & img{
           height: $nav-height;
           margin-right: -15px;
-          transition: height .6 ease;
+          transition: height .6s;
         }
         & span{
           padding-left: 15px;

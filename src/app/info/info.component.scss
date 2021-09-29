@@ -8,23 +8,23 @@ h1{
   line-height: 5rem;
   right:20%;
   text-align: right;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   z-index: 10;
   @include respond(tab-land){
     font-size: 1.8rem;
     line-height: 2.7rem;
     letter-spacing: .13rem;
     padding: 0;
-    margin: 2% 0;
+    margin: 3% 0;
   }
   @include respond(tab-port){
-padding: 10px;
-text-align: center;    right:0%;
+    padding: 1%;
+    text-align: center;
+    width: 98%;
+    left: 0;
     line-height: 3rem;
     background-color: $white;
-
-
-
+    mix-blend-mode: lighten;
   }
 
   @include respond(phone){
