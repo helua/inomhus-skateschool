@@ -1,4 +1,17 @@
 @import './../../sass/styles';
+.mobile-logo{
+  display: none;
+  visibility: hidden;
+  @include respond(phone){
+    display: block;
+    visibility: visible;
+    width: 100%;
+    padding: 5% 0 5% 10%;
+    & img{
+      width: 80%;
+    }
+  }
+}
 h1{
   position: absolute;
   mix-blend-mode: luminosity;
@@ -34,9 +47,9 @@ h1{
     position: relative;
     text-align: left;
     padding: .6rem 0 .6rem 5%;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     margin-right: -2rem;
-    margin-bottom: -24px;
+    margin-bottom: -30px;
     width: 95%;
   }
 

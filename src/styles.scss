@@ -120,35 +120,19 @@ button{
     }
 }
 
-//mobile menu
-.mobile{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    & ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    @media only screen and (min-width: 599px) {
-    display: none;
-    visibility: hidden;
-    }
-}
-.mat-sidenav{
-  background-color: $white;
-}
-.mat-drawer{
-    position: fixed !important;
-    padding-top: 6rem;
-}
 .mat-drawer-container{
-    background-color: rgba($white, .9);
+  background-color: rgba($white, .9);
+  // & ul{
+  //   display: flex;
+  //   position: absolute;
+  //   top: 0;
+  //   justify-content: space-between;
+  //   width: 134%;
+  //   list-style: none;
+  //   z-index: 11;
+
+  // }
 }
 .mat-drawer-backdrop.mat-drawer-shown{
-    background-color: rgba($contrast, .6);
+  background-color: rgba($contrast, .6);
 }
-
-

@@ -1,5 +1,33 @@
 
 @import '../../sass/styles';
+//mobile menu
+.mobile{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  & ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+  }
+
+  @media only screen and (min-width: 599px) {
+  display: none;
+  visibility: hidden;
+  }
+}
+.mat-sidenav{
+background-color: $white;
+}
+.mat-drawer{
+  position: fixed !important;
+  padding-top: 6rem;
+}
+
+
+
+
 
 .mat-list-item{
   font-size: 1.5rem;
