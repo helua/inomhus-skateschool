@@ -3,11 +3,14 @@
 .holder{
   display: flex;
   flex-direction: column;
+
   @include respond(tab-port){
     margin-top: 200px;
   }
   @include respond(phone){
     margin-top: 30px;
+    height: calc(100vh - 68px);
+
   }
 }
 @media only screen and (min-width: 600px){
