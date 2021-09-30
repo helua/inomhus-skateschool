@@ -38,9 +38,9 @@ h1{
     left: 0;
     right: 0;
     padding: 0;
-    line-height: 3rem;
     background-color: $white;
-    mix-blend-mode: lighten;
+
+    line-height: 2.4rem;
   }
 
   @include respond(phone){
@@ -66,10 +66,17 @@ h1{
     width: 70%;
     margin: 50px 0 100px 0;
   }
+   & img{
+    filter: contrast(2) hue-rotate(20deg);
+
+  }
+
   & img:nth-child(1){
     margin-top: -3%;
     width: 100%;
     z-index: 7;
+    filter: contrast(1.5) hue-rotate(10deg);
+
   }
   & img:nth-child(4){
     width: 70%;
@@ -190,5 +197,43 @@ h1{
     & .col:nth-child(2){
       height: 1180px;
     }
+  }
+}
+
+.button-holder{
+  position: relative;
+  width: 100%;
+  height: 6rem;
+}
+
+.button{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: $contrast;
+  color: $color;
+  text-transform: uppercase;
+  min-width: 30%;
+  max-width: 30px;
+  text-align: center;
+  transition: .2s ease-in-out;
+  margin: 60px 0 0 0;
+  @include respond(tab-land){
+    font-size: 1.16rem;
+  }
+  @include respond(phone){
+    font-size: 1.2rem;
+    padding: 5px 8px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  &:hover{
+    background-color: $mild;
+    color: $contrast;
+    transform: scale(1.1) translateX(-45%);
+    box-shadow: $mild2 -5px -5px;
   }
 }

@@ -29,14 +29,20 @@ export class NavComponent implements OnInit {
           for(let i = 0; i < img.length; i++){
             img[i].style.height = "100px";
             img[i].style.padding = "10px 7.5px";
+          }
+          for(let i=0; i < text.length; i++){
             text[i].style.fontSize = "1.13rem";
+
           }
         } else {
           cont.style.padding = "2% 0";
           for(let i=0; i < img.length; i++){
             img[i].style.height = "120px";
             img[i].style.padding = "0px";
+          }
+          for(let i=0; i < text.length; i++){
             text[i].style.fontSize = "1.3rem";
+
           }
         }
       }

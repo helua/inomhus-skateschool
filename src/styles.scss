@@ -33,7 +33,7 @@ a{
     font-weight: 900;
     &:hover:not(#logo, #inomhus) {
       color: $contrast;
-      opacity: .9;
+      // opacity: .9;
       transform: translateY(-1.5px);
       text-shadow: 1px 3px 2px $mild;
     }
@@ -76,42 +76,42 @@ p {@include respond(phone){
 
 }}
 
-button{
-    background-color: $contrast;
-    color: $color;
-    text-transform: uppercase;
-    padding: 15px;
-    margin: 60px;
-    cursor: pointer;
-    font-family: $font-family;
-    font-size: 1.4rem;
-    transition: all .3s;
-    text-align: center;
-    border-radius: .5rem;
-    position: absolute;
-    letter-spacing: .2rem;
-    display: inline-block;
-    font-weight: 700;
+// button{
+//     background-color: $contrast;
+//     color: $color;
+//     text-transform: uppercase;
+//     padding: 15px;
+//     margin: 60px;
+//     cursor: pointer;
+//     font-family: $font-family;
+//     font-size: 1.4rem;
+//     transition: all .3s;
+//     text-align: center;
+//     border-radius: .5rem;
+//     position: absolute;
+//     letter-spacing: .2rem;
+//     display: inline-block;
+//     font-weight: 700;
 
-    &:hover{
-      transform: scale(1.05);
-      border-radius: 0%;
-    }
-    & img{
-      height: 3rem;
-      display: inline-block;
-    }
-    @include respond(phone){
-      font-size: 1.1rem;
-      margin: 50px 0 400px 0;
-      left: 50%;
-      transform: translateX(-50%);
-      &:hover{
-        transform: translateX(-50%);
+//     &:hover{
+//       transform: scale(1.05);
+//       border-radius: 0%;
+//     }
+//     & img{
+//       height: 3rem;
+//       display: inline-block;
+//     }
+//     @include respond(phone){
+//       font-size: 1.1rem;
+//       margin: 50px 0 400px 0;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       &:hover{
+//         transform: translateX(-50%);
 
-      }
-    }
-}
+//       }
+//     }
+// }
 //responsive menu
 @media only screen and (max-width: 599px) {
     .desktop{

@@ -26,7 +26,7 @@ nav{
 //linki i zakreślenie
 nav a.active{
   color: $contrast;
-  opacity: .9;
+  // opacity: .9;
   transform: translateY(-1.5px);
   text-shadow: 1px 3px 2px $mild;
 }
