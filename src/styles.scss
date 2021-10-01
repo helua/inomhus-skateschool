@@ -122,6 +122,8 @@ p {@include respond(phone){
 
 .mat-drawer-container{
   background-color: rgba($white, .9);
+  overflow-y: scroll;
+  overflow-x: hidden;
   // & ul{
   //   display: flex;
   //   position: absolute;

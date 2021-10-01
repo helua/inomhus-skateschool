@@ -16,8 +16,9 @@
     height: 240px;
     margin: 10px auto;
     @include respond(phone){
-      width: 60%;
-      height: 60%;
+      width: 200px;
+      height: 200px;
+      margin: 5vh auto;
     }
     & img{
       width: 100%;
