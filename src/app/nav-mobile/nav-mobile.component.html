@@ -1,15 +1,12 @@
 <div class="mobile">
   <ul>
     <li>
-      <!-- <mat-icon (click)="sidenav.toggle()">menu</mat-icon> -->
       <fa-icon [icon]="menuIcon" (click)="sidenav.toggle()"></fa-icon>
     </li>
     <li><a href="https://www.facebook.com/inohmus" target="_blank">
-      <!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
       <fa-icon [icon]="facebookIcon"></fa-icon>
     </a></li>
     <li><a href="https://www.instagram.com/inohmus" target="_blank">
-      <!-- <i class="fa fa-instagram" aria-hidden="true"></i> -->
       <fa-icon [icon]="instagramIcon"></fa-icon>
     </a></li>
   </ul>
@@ -23,8 +20,8 @@
           <a (click)="sidenav.toggle()" mat-list-item routerLink="/info" routerLinkActive="active"><img src="../../assets/znak zapytania.svg" alt="">INFO</a>
           <a (click)="sidenav.toggle()" mat-list-item routerLink="/cennik" routerLinkActive="active"><img src="../../assets/dokument.svg" alt="">CENNIK</a>
           <a (click)="sidenav.toggle()" mat-list-item routerLink="/kontakt" routerLinkActive="active"><img src="../../assets/ryjek.svg" alt="">KONTAKT</a>
-          <a (click)="sidenav.toggle()" mat-list-item routerLink="/galeria" routerLinkActive="active"><img src="../../assets/boom.svg" alt="">GALERIA</a>
-          <a (click)="sidenav.toggle()" mat-list-item href="http://helio.webd.pl/inomhus" target="_blank"><img src="../../assets/inomhus.png" alt="INOMHUS" style="height: 3rem; margin: 1rem 0 1rem 1rem;"></a>
+          <!-- <a (click)="sidenav.toggle()" mat-list-item routerLink="/galeria" routerLinkActive="active"><img src="../../assets/boom.svg" alt="">GALERIA</a> -->
+          <a (click)="sidenav.toggle()" mat-list-item href="https://theinomhus.com" target="_blank"><img src="../../assets/inomhus.png" alt="INOMHUS" style="height: 3rem; margin: 1rem 0 1rem 1rem;"></a>
         </mat-nav-list>
       </mat-sidenav>
     <mat-sidenav-content>

@@ -14,8 +14,6 @@ export class ScreenService {
     getScreenSize() {
       this.scrWidth = window.innerWidth;
       this.scrHeight = window.innerHeight;
-
-
       if(this.scrWidth > 900){
         this.isBigScreen = true;
       }
