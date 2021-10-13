@@ -68,12 +68,14 @@ nav #nav-main{
 
     & ul{
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        justify-content: space-around;
     }
     & li{
       line-height: $nav-height;
       &:first-child{
-        padding-left: 50px;
+        margin-left: 0;
+        // padding-left: 50px;
       }
 
 

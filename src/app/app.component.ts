@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
 
 ngOnInit(){
   this.metaService.addTags([
-    {name: 'robots', content: 'noindex, nofollow, noimageindex'}
+    {name: 'robots', content: 'index, follow'}
   ]);
 }
 }
