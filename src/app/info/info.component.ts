@@ -9,14 +9,12 @@ import { Title, Meta, MetaDefinition } from '@angular/platform-browser';
 export class InfoComponent implements OnInit {
 
   title = 'INOMHUS Skate School';
-  keywords: MetaDefinition = {name: 'keywords', content: 'skate, deskorolka'};
-  description: MetaDefinition = {name: 'description', content: 'Strona szkoły jazdy na deskorolce dla skateów'};
+  description: MetaDefinition = {name: 'description', content: 'INOMHUS Skate School to szkoła nauki jazdy na deskorolce w Trójmieście oraz jego okolicach. Umów się na pierwsze zajęcia na najbliższym skateparku już teraz!'};
 
   constructor(private titleService: Title, private metaService: Meta){}
 
   ngOnInit() {
     this.titleService.setTitle(this.title);
-    this.metaService.updateTag(this.keywords);
     this.metaService.updateTag(this.description);
   }
 }

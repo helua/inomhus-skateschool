@@ -11,8 +11,7 @@ import { ScreenService } from '../screen.service';
 export class GaleriaComponent implements OnInit, AfterViewChecked {
 
   title = 'Galeria | INOMHUS Skate School';
-  keywords: MetaDefinition = {name: 'keywords', content: 'jakieś keywords'};
-  description: MetaDefinition = {name: 'description', content: 'jakiś opis'};
+  description: MetaDefinition = {name: 'description', content: 'Sprawdź naszą galerię zdjęć i filmów INOMHUS Skate School, gdzie na bieżąco pokazujemy postęp naszych podopiecznych w nauce jazdy na deskorolce!'};
 
   instagramToken: any;
   instagramString: string ='IGQVJYWUpaRHJvV0VpWEJRRFBGNVlOS0Eycm44SXNuXzRLdGVSN1BqcnQwR3cxVktfS29Ra3RpWWlSWmxLMHJpaFdvZAEZApN3hsV1NnZA1pVeWx3RjU3ZAUhvam52ZAFhCMEJUVDExYjJ3';
@@ -20,13 +19,10 @@ export class GaleriaComponent implements OnInit, AfterViewChecked {
 
   ngOnInit() {
     this.titleService.setTitle(this.title);
-    this.metaService.updateTag(this.keywords);
     this.metaService.updateTag(this.description);
     this.getToken();
     this.getFeed();
     this.screen.getScreenSize();
-
-
   }
 
   getToken(){
