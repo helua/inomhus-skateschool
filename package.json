@@ -10,7 +10,9 @@
     "dev:ssr": "ng run INOMHUS-SKATESCHOOL:serve-ssr",
     "serve:ssr": "node dist/INOMHUS-SKATESCHOOL/server/main.js",
     "build:ssr": "ng build && ng run INOMHUS-SKATESCHOOL:server",
-    "prerender": "ng run INOMHUS-SKATESCHOOL:prerender"
+    "prerender": "ng run INOMHUS-SKATESCHOOL:prerender",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,10 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@nguniversal/express-engine": "^12.1.0",
+    "@scullyio/init": "^2.0.5",
+    "@scullyio/ng-lib": "^2.0.0",
+    "@scullyio/scully": "^2.0.0",
+    "@scullyio/scully-plugin-puppeteer": "^2.0.0",
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

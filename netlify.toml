@@ -1,7 +1,7 @@
 [build]
-  command = "npm run prerender"
+  command = "npm run build && npm run scully"
   functions = "./functions"
-  publish = "dist/INOMHUS-SKATESCHOOL/browser"
+  publish = "dist/INOMHUS-SKATESCHOOL/static"
 [dev]
   command = "npm run start"
   functions = "./functions"
